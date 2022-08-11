@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Forecast</title>
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <!-- Tailwindcss -->
+        <link type="text/tailwindcss" href="tailwindcss.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body class="bg-gray-200" style="background: antiquewhite">
+        <!-- Header -->
+        <header
+            class="flex justify-between items-center container mx-auto py-5"
+        >
+            <h3 class="text-rose-500 text-2xl font-bold uppercase">
+                my weather
+            </h3>
+            <div class="bg-white border border-black">
+                <input
+                    id="input-search"
+                    type="text"
+                    placeholder="Search city"
+                    class="input-search border-none bg-transparent"
+                />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass px-3">Search</i>
+                </button>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Navbar -->
+        <nav class="bg-gray-700" style="margin-top: 20px; background: black">
+            <div class="container mx-auto">
+                <button
+                    class="btn-today py-2 px-4 text-white font-bold border-b-2 border-b-rose-500 border border-gray-600"
+                >
+                    Today
+                </button>
+                <button class="btn-5-days py-2 px-4 text-white font-bold">
+                    5-days forecast
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Main -->
+        <main style="padding-top: 20px"></main>
+        <!-- End Main -->
+
+        <!-- JQuery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+            integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Moment -->
+        <script src="https://momentjs.com/downloads/moment.js"></script>
+
+        <!-- Component Scripts -->
+        <script type="module" src="screens/today-forecast.js"></script>
+        <script type="module" src="screens/five-days-forecast.js"></script>
+        <script type="module" src="screens/404.js"></script>
+
+        <!-- Scripts -->
+        <script type="module" src="scripts/bootstrap.js"></script>
+        <script type="module" src="scripts/script.js"></script>
+    </body>
+</html>
